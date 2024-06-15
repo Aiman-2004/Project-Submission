@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <legend>CALCULATION</legend>
+        <fieldset>
+    <div class="main">
+    <div class="row">
+    <button onclick="even_odd()">Evevn or odd</button>
+    <script>
+        let even_odd=()=>{
+            let num=(prompt("enter"))
+            if(num%2===0)
+            document.write("even number")
+            else
+            document.write("odd number")
+        }
+        
+    </script>
+    <button onclick="add()">Addition</button>
+    <script>
+        let add=()=>{
+            let n1=Number(prompt("enter"))
+            let n2=Number(prompt("enter"))
+            let sum=n1+n2;
+            document.write(sum)
+            }
+    </script>
+        
+    <button onclick="sub()">subtraction</button>
+    <script>
+        let sub=()=>{
+            let n1=Number(prompt("enter"))
+            let n2=Number(prompt("enter"))
+            let subb=n1-n2;
+             }
+    </script>
+    </div>
+    <div class="row">
+    <button onclick="mull()">multiplication</button>
+    <script>
+        let mull=()=>{
+            let n1=Number(prompt("enter"))
+                let n2=Number(prompt("enter"))
+                let mul=n1*n2;
+                document.write(mul)
+              }
+    </script>
+    <button onclick="divide()">Division</button>
+    <script>
+        let divide=()=>{
+            let n1=Number(prompt("enter"))
+            let n2=Number(prompt("enter"))
+            let div=n1/n2;
+            document.write(div)
+                }
+    </script>
+    
+    <button onclick="fact()">factorial</button>
+    <script>
+        let fact=()=>{
+            let fac=(prompt("enter"))
+            let mul=1
+            for(let i=1;i<=fac;i++){
+                mul=i*mul;
+            }
+         document.write(mul)
+        }
+    </script>
+    </div>
+    </div>
+</form>
+</fieldset>
+</body>
+</html>
